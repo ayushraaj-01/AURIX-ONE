@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURIX ONE — Silence the noise. Feel everything.</title>
+  <meta name="description" content="AURIX ONE. Flagship wireless acoustic monitoring headphones engineered with 40mm custom graphene drivers, 55dB adaptive hybrid ANC, and 55-hour battery life.">
+  <meta name="theme-color" content="#f2eee5">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="AURIX ONE — Silence the noise. Feel everything.">
+  <meta property="og:description" content="Explore the deconstructed engineering of the AURIX ONE flagship wireless headphones.">
+  <meta property="og:image" content="/assets/aurix/aurix-product-showcase.png">
+  <meta property="og:type" content="website">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..500;1,6..72,200..400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="theme-noir">
+
+  <!-- Background Ambient Glow & Cinematic Grid -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-middle" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-monogram" aria-label="AURIX Home">
+        <svg class="brand-logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 2L4 26H9L16 11L23 26H28L16 2Z" fill="currentColor"/>
+          <path class="brand-logo-rule" d="M11.5 21H20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt"/>
+        </svg>
+        <span class="brand-name">AURIX</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link">Overview</a>
+        <a href="#engineering" class="nav-link">Engineering</a>
+        <a href="#reveal" class="nav-link">Acoustics</a>
+        <a href="#craftsmanship" class="nav-link">Craftsmanship</a>
+        <a href="#specifications" class="nav-link">Specifications</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Animated Dark / Light Mode Toggle Button -->
+        <button class="btn btn-theme-toggle" id="themeToggle" aria-label="Toggle Dark / Light Theme" title="Toggle Theme (Dark / Light)">
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <button class="btn btn-audio-toggle" id="globalSoundToggle" aria-label="Toggle Sound Atmosphere">
+          <svg class="icon-sound-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path class="wave-bar bar-1" d="M4 10v4"/>
+            <path class="wave-bar bar-2" d="M8 7v10"/>
+            <path class="wave-bar bar-3" d="M12 4v16"/>
+            <path class="wave-bar bar-4" d="M16 8v8"/>
+            <path class="wave-bar bar-5" d="M20 11v2"/>
+          </svg>
+          <span class="audio-label">Soundstage</span>
+        </button>
+        <a href="#preorder" class="btn btn-nav-cta">
+          <span>Pre-Order</span>
+          <span class="badge-price">$449</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="section section-hero" id="hero">
+      <div class="hero-container">
+        <div class="hero-tagline-wrap">
+          <div class="status-indicator">
+            <span class="pulse-dot"></span>
+            <span class="status-text">AURIX LABS • SERIE 01 ARCHITECTURE</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-sub">AURIX ONE</span>
+            <span class="title-main">Silence the noise.<br><span class="text-gradient-crimson">Feel everything.</span></span>
+          </h1>
+          <p class="hero-description">
+            Precision-milled aerospace acoustic chambers. Bespoke 40mm graphene diaphragms and proprietary 55dB adaptive hybrid neural cancellation. Designed for pure sensory fidelity.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#engineering" class="btn btn-primary">
+              <span>Explore Deconstruction</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+            </a>
+            <a href="#preorder" class="btn btn-secondary">
+              <span>Reserve Batch 01</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div class="hero-spec-pills">
+            <div class="spec-pill">
+              <span class="pill-value">40<small>mm</small></span>
+              <span class="pill-label">Graphene Drivers</span>
+            </div>
+            <div class="spec-pill-divider"></div>
+            <div class="spec-pill">
+              <span class="pill-value">-55<small>dB</small></span>
+              <span class="pill-label">Adaptive ANC</span>
+            </div>
+            <div class="spec-pill-divider"></div>
+            <div class="spec-pill">
+              <span class="pill-value">55<small>h</small></span>
+              <span class="pill-label">Battery Playback</span>
+            </div>
+            <div class="spec-pill-divider"></div>
+            <div class="spec-pill">
+              <span class="pill-value">360<small>°</small></span>
+              <span class="pill-label">Spatial Audio</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Visual -->
+        <div class="hero-visual-stage" id="heroVisualStage">
+          <div class="cinematic-backdrop-ring"></div>
+          <div class="hero-image-perspective-card" id="heroCard">
+            <img 
+              src="/assets/aurix/aurix-product-showcase.png" 
+              alt="AURIX ONE Luxury Wireless Headphones Showcase with stand and hardcase" 
+              class="hero-product-img" 
+              id="heroProductImg"
+            />
+            <div class="hero-card-lighting" id="heroLighting"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ENGINEERING: FULL-BLEED VERTICAL SCROLL EXPLODED-VIEW SHOWPIECE -->
+    <section class="section-engineering-scroll" id="engineering">
+      <div class="engineering-sticky-viewport">
+        <!-- 1. FULL-BLEED CANVAS LAYER (NO BOX, FULL VIEWPORT, SEAMLESS VOID) -->
+        <div class="exploded-canvas-fullbleed" id="explodedViewport">
+          <!-- Preload Loader -->
+          <div class="exploded-loader" id="explodedLoader">
+            <div class="loader-spinner"></div>
+            <span class="loader-text" id="loaderText">Loading the sequence — 0%</span>
+            <div class="loader-bar-bg">
+              <div class="loader-bar-fill" id="loaderBarFill"></div>
+            </div>
+          </div>
+
+          <!-- Fullscreen High-DPI Exploded Frame Canvas -->
+          <canvas id="explodedCanvas"></canvas>
+        </div>
+
+        <!-- 2. CINEMATIC INTRO BANNER (FADES AWAY AUTOMATICALLY ON SCROLL) -->
+        <div class="engineering-cinematic-banner" id="engineeringBanner">
+          <div class="engineering-banner-inner">
+            <span class="section-badge badge-crimson">DECONSTRUCTED ARCHITECTURE</span>
+            <h2 class="cinematic-headline">Every layer engineered for acoustic purity.</h2>
+            <div class="cinematic-scroll-prompt">
+              <span class="scroll-mouse-icon">
+                <span class="scroll-mouse-wheel"></span>
+              </span>
+              <span class="scroll-prompt-text">Scroll to open the acoustic chamber</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. CHAPTER CAPTION & FRAME READOUT -->
+        <div class="sequence-caption" id="sequenceCaption" aria-hidden="true">
+          <div class="caption-meta">
+            <span class="caption-index" id="captionIndex">01</span>
+            <span class="caption-rule"></span>
+            <span class="caption-total">/ 05</span>
+          </div>
+          <h3 class="caption-title" id="captionTitle">The complete instrument</h3>
+          <p class="caption-note" id="captionNote">Sealed. 248 grams. Nothing visible, everything present.</p>
+        </div>
+
+        <div class="sequence-counter" id="sequenceCounter" aria-hidden="true">
+          <span class="counter-value" id="counterValue">001</span>
+          <span class="counter-total">/ 300</span>
+        </div>
+
+        <!-- 4. HAIRLINE PROGRESS LINE -->
+        <div class="engineering-progress-line-track">
+          <div class="engineering-progress-line-fill" id="engineeringProgressFill"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PRODUCT REVEAL SECTION -->
+    <section class="section section-reveal" id="reveal">
+      <div class="section-inner">
+        <div class="section-header text-center">
+          <span class="section-badge">ACOUSTIC PURITY</span>
+          <h2 class="section-title">Designed without compromise.</h2>
+          <p class="section-subtitle">
+            Most headphones choose between active noise cancellation and authentic dynamic range. AURIX ONE delivers both through custom-machined physical enclosures and precision-tuned analog circuitry.
+          </p>
+        </div>
+
+        <!-- Dual Cinematic Feature Grid -->
+        <div class="reveal-editorial-grid">
+          <div class="editorial-card card-dark-metal">
+            <div class="editorial-meta">
+              <span class="card-num">01 / ARCHITECTURE</span>
+              <h3 class="editorial-title">Zero Resonance Enclosure</h3>
+              <p class="editorial-desc">
+                Die-cast aluminum cups coupled with non-parallel interior dampening walls eliminate standing waves before they reach your ear. The result is pure, uncolored transient response.
+              </p>
+            </div>
+            <div class="editorial-stat">
+              <span class="stat-number">0.05%</span>
+              <span class="stat-caption">Total Harmonic Distortion @ 1kHz, 100dB SPL</span>
+            </div>
+          </div>
+
+          <div class="editorial-card card-dark-metal">
+            <div class="editorial-meta">
+              <span class="card-num">02 / CALIBRATION</span>
+              <h3 class="editorial-title">Personalized Ear Canal Tuning</h3>
+              <p class="editorial-desc">
+                Dual internal feedback microphones measure the acoustic impedance of your ear shape 400 times per second, dynamically adjusting EQ curves for a tailored listening experience.
+              </p>
+            </div>
+            <div class="editorial-stat">
+              <span class="stat-number">380k</span>
+              <span class="stat-caption">DSP Neural Calculations per second</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SOUND & ANC (THE ACOUSTIC ENGINE) -->
+    <section class="section section-acoustics" id="acoustics">
+      <div class="section-inner">
+        <div class="acoustics-layout">
+          <div class="acoustics-info">
+            <span class="section-badge">THE ACOUSTIC ENGINE</span>
+            <h2 class="section-title">Adaptive Silence.<br><span class="text-gradient-crimson">Unfiltered Depth.</span></h2>
+            <p class="section-subtitle">
+              Proprietary hybrid cancellation uses external feedforward microphones and internal feedback sensors to generate an inverted anti-phase waveform that dissolves jet rumble, city noise, and chatter.
+            </p>
+
+            <!-- Mode Selector Tabs -->
+            <div class="anc-mode-switcher" role="tablist">
+              <button class="mode-btn active" data-mode="anc" role="tab" aria-selected="true">
+                <span class="mode-icon-bullet"></span>
+                <span class="mode-text">Adaptive ANC</span>
+                <span class="mode-db">-55dB</span>
+              </button>
+              <button class="mode-btn" data-mode="transparency" role="tab" aria-selected="false">
+                <span class="mode-icon-bullet"></span>
+                <span class="mode-text">Transparency</span>
+                <span class="mode-db">Bionic Pass</span>
+              </button>
+              <button class="mode-btn" data-mode="spatial" role="tab" aria-selected="false">
+                <span class="mode-icon-bullet"></span>
+                <span class="mode-text">Spatial 360°</span>
+                <span class="mode-db">Binaural</span>
+              </button>
+            </div>
+
+            <!-- Active Mode Description Box -->
+            <div class="mode-description-box" id="modeDescription">
+              <h4 class="mode-desc-title" id="modeTitle">Adaptive Active Noise Cancellation</h4>
+              <p class="mode-desc-text" id="modeText">
+                Continuously adapts to ambient sound pressure. Eliminates low-frequency drone and mid-frequency human speech, leaving an acoustic vacuum of total focus.
+              </p>
+              <div class="mode-tags">
+                <span class="tag">Anti-Phase Processing</span>
+                <span class="tag">Wind Noise Barrier</span>
+                <span class="tag">Ear-Seal Compensation</span>
+              </div>
+            </div>
+
+            <!-- Audio Waveform Live Toggle -->
+            <div class="audio-preview-dock">
+              <button class="btn btn-crimson-action" id="audioPreviewBtn">
+                <svg class="preview-play-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <span id="audioPreviewBtnText">Simulate Acoustic Mode</span>
+              </button>
+              <span class="audio-preview-hint">Real-time Web Audio synthesis</span>
+            </div>
+          </div>
+
+          <!-- Soundwave Real-Time Canvas Visualizer -->
+          <div class="acoustics-visualizer-card">
+            <div class="visualizer-header">
+              <div class="channel-monitor">
+                <span class="monitor-led active"></span>
+                <span class="monitor-label" id="visualizerModeLabel">LIVE FEEDFORWARD INVERSION</span>
+              </div>
+              <div class="freq-range">4Hz — 48,000Hz</div>
+            </div>
+
+            <div class="canvas-container">
+              <canvas id="soundwaveCanvas" width="700" height="340"></canvas>
+            </div>
+
+            <div class="visualizer-footer">
+              <div class="vis-legend">
+                <span class="legend-dot dot-ambient"></span>
+                <span class="legend-text">Ambient Pressure</span>
+              </div>
+              <div class="vis-legend">
+                <span class="legend-dot dot-antiphase"></span>
+                <span class="legend-text">AURIX Inverted Phase</span>
+              </div>
+              <div class="vis-legend">
+                <span class="legend-dot dot-pure"></span>
+                <span class="legend-text">Resultant Purity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Sound Pillars Bento -->
+        <div class="acoustic-pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></svg>
+            </div>
+            <h4>40mm Graphene Driver</h4>
+            <p>Single-layer carbon lattice provides unmatched stiffness-to-weight ratio, preventing distortion even at peak excursions.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+            </div>
+            <h4>8-Mic Beamforming</h4>
+            <p>6 feedforward acoustic sensors plus 2 bone-conduction voice pickups ensure crystal-clear studio vocal capture in gale-force winds.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="m8 7 4-4 4 4"/><circle cx="12" cy="13.5" r="2.5"/></svg>
+            </div>
+            <h4>Spatial Immersion 360°</h4>
+            <p>Six-axis gyroscopic head-tracking anchors sound sources in physical space, producing true theater-grade binaural surround sound.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="18" height="12" rx="2"/><line x1="22" y1="11" x2="22" y2="13"/><path d="M6 12h8"/></svg>
+            </div>
+            <h4>55-Hour Endurance</h4>
+            <p>High-energy density dual Li-Po architecture. Fast fuel USB-C: 10 minutes of charge delivers 8 full hours of playback.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CRAFTSMANSHIP & MATERIALS -->
+    <section class="section section-craftsmanship" id="craftsmanship">
+      <div class="section-inner">
+        <div class="section-header text-center">
+          <span class="section-badge">MATERIALITY & CRAFTSMANSHIP</span>
+          <h2 class="section-title">Sculpted for endurance.</h2>
+          <p class="section-subtitle">
+            Every surface is chosen not only for aesthetic prestige, but for acoustic damping, thermal dissipation, and all-day ergonomic equilibrium.
+          </p>
+        </div>
+
+        <!-- Craftsmanship Macro Visuals Split Grid -->
+        <div class="craftsmanship-grid">
+          <div class="craft-feature-card">
+            <div class="craft-image-wrap">
+              <img 
+                src="/assets/aurix/craftsmanship-hinge.jpg" 
+                alt="Extreme close up of AURIX brushed gold hinge and leather headband" 
+                class="craft-img"
+                loading="lazy"
+              />
+              <div class="craft-img-overlay">
+                <span class="macro-tag">01 / ARTICULATION</span>
+              </div>
+            </div>
+            <div class="craft-info">
+              <h3>Brushed Champagne Gold & Full-Grain Leather</h3>
+              <p>
+                The folding yoke is machined from cold-forged 6000-series aluminum and finished with micro-bead blasting. The headband is hand-bound in supple, breathable protein leather with crimson double-needle tension stitching.
+              </p>
+              <ul class="craft-specs-list">
+                <li><span>Tolerance:</span> <strong>±0.02mm CNC Accuracy</strong></li>
+                <li><span>Hinge Life:</span> <strong>50,000+ Smooth Cycles</strong></li>
+                <li><span>Clamping Force:</span> <strong>Balanced 4.2N Pressure</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="craft-feature-card">
+            <div class="craft-image-wrap">
+              <img 
+                src="/assets/aurix/craftsmanship-dial.jpg" 
+                alt="Tactile knurled rotary dial with deep red LED halo ring" 
+                class="craft-img"
+                loading="lazy"
+              />
+              <div class="craft-img-overlay">
+                <span class="macro-tag">02 / INTERACTION</span>
+              </div>
+            </div>
+            <div class="craft-info">
+              <h3>Tactile CNC Knurled Dial & Crimson Halo</h3>
+              <p>
+                Forget accidental touch swipes in the rain. AURIX ONE features a diamond-knurled physical rotary crown that controls volume and ANC intensity with surgical haptic clicks and an illuminated deep red halo indicator.
+              </p>
+              <ul class="craft-specs-list">
+                <li><span>Detents:</span> <strong>36 Ultra-fine Haptic Steps</strong></li>
+                <li><span>Acoustic Mesh:</span> <strong>Laser-etched Micro-mesh</strong></li>
+                <li><span>Water Rating:</span> <strong>IPX4 Sweat & Splash Proof</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SPECIFICATIONS MATRIX -->
+    <section class="section section-specs" id="specifications">
+      <div class="section-inner">
+        <div class="section-header text-center">
+          <span class="section-badge">ENGINEERING DATA</span>
+          <h2 class="section-title">Technical Specifications</h2>
+          <p class="section-subtitle">
+            Transparent acoustic metrics. No inflated marketing claims. Built to out-spec and out-last ordinary consumer headphones.
+          </p>
+        </div>
+
+        <div class="specs-matrix-container">
+          <div class="specs-category">
+            <h3 class="category-title">Acoustic Architecture</h3>
+            <div class="spec-row">
+              <span class="spec-name">Transducer Type</span>
+              <span class="spec-value">40mm Custom Graphene Dynamic Driver</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Frequency Response</span>
+              <span class="spec-value">4 Hz – 48,000 Hz (Hi-Res Audio Certified)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Total Harmonic Distortion (THD)</span>
+              <span class="spec-value">&lt; 0.05% @ 1 kHz, 100 dB SPL</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Acoustic Chamber Design</span>
+              <span class="spec-value">Dual-cavity Helmholtz resonance damper</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Passive Noise Isolation</span>
+              <span class="spec-value">-28 dB @ 1 kHz (high-density foam seal)</span>
+            </div>
+          </div>
+
+          <div class="specs-category">
+            <h3 class="category-title">Active Noise Cancellation & Mics</h3>
+            <div class="spec-row">
+              <span class="spec-name">ANC Suppression Depth</span>
+              <span class="spec-value">Up to -55 dB Adaptive Neural Attenuation</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Microphone Array</span>
+              <span class="spec-value">8-mic hybrid array (4 feedforward, 2 feedback, 2 voice)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">DSP Sample Rate</span>
+              <span class="spec-value">380,000 recalculations/sec at 96 kHz / 24-bit</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Latency</span>
+              <span class="spec-value">Ultra-low 18ms with proprietary AURIX Low Latency</span>
+            </div>
+          </div>
+
+          <div class="specs-category">
+            <h3 class="category-title">Connectivity & Codecs</h3>
+            <div class="spec-row">
+              <span class="spec-name">Wireless Protocol</span>
+              <span class="spec-value">Bluetooth 5.4 with Auracast™ Broadcast Support</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Supported Audio Codecs</span>
+              <span class="spec-value">Sony LDAC, aptX Lossless, aptX Adaptive, AAC, SBC</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Multipoint Connection</span>
+              <span class="spec-value">Seamless instant pairing with 2 devices simultaneously</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Wired Playback</span>
+              <span class="spec-value">3.5mm Silver-plated analog jack + USB-C Digital Audio</span>
+            </div>
+          </div>
+
+          <div class="specs-category">
+            <h3 class="category-title">Battery, Weight & Build</h3>
+            <div class="spec-row">
+              <span class="spec-name">Playback Time (ANC On)</span>
+              <span class="spec-value">55 hours at 65% volume</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Playback Time (ANC Off)</span>
+              <span class="spec-value">72 hours continuous playback</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Fast Fuel Charge</span>
+              <span class="spec-value">10 minutes charge = 8 hours playback</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Total Weight</span>
+              <span class="spec-value">248 grams (Ultralight aerospace balance)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-name">Environmental Protection</span>
+              <span class="spec-value">IPX4 Water, splash & sweat resistance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- In The Box Showcase -->
+        <div class="in-the-box-card">
+          <div class="box-header">
+            <h4>What’s In The Box</h4>
+            <span class="box-tag">Standard Edition Complete Package</span>
+          </div>
+          <div class="box-items-row">
+            <div class="box-item">
+              <span class="item-icon">01</span>
+              <span class="item-name">AURIX ONE Headphone</span>
+            </div>
+            <div class="box-item">
+              <span class="item-icon">02</span>
+              <span class="item-name">Magnetic Hard Shell Travel Case</span>
+            </div>
+            <div class="box-item">
+              <span class="item-icon">03</span>
+              <span class="item-name">1.2m Braided 3.5mm Silver Cable</span>
+            </div>
+            <div class="box-item">
+              <span class="item-icon">04</span>
+              <span class="item-name">Braided USB-C to USB-C Fast Cable</span>
+            </div>
+            <div class="box-item">
+              <span class="item-icon">05</span>
+              <span class="item-name">Gold-plated Flight Adapter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FINAL CTA & PRE-ORDER -->
+    <section class="section section-preorder" id="preorder">
+      <div class="section-inner">
+        <div class="preorder-container">
+          <div class="preorder-visual">
+            <div class="product-glow-halo"></div>
+            <img 
+              src="/assets/aurix/aurix-product-showcase.png" 
+              alt="AURIX ONE Final Pre-order product render" 
+              class="preorder-product-image"
+            />
+            <div class="preorder-status-pill">
+              <span class="badge-dot"></span>
+              <span>BATCH 01 ALLOCATION: 84% RESERVED</span>
+            </div>
+          </div>
+
+          <div class="preorder-content">
+            <span class="section-badge badge-crimson">LIMITED PRODUCTION RUN</span>
+            <h2 class="preorder-title">Experience the new benchmark in personal acoustics.</h2>
+            <p class="preorder-desc">
+              Every unit in Batch 01 includes an individually serialized metal certificate of authenticity, the magnetic hard travel case, and priority express shipping.
+            </p>
+
+            <!-- Colorway Selector -->
+            <div class="colorway-picker">
+              <span class="picker-label">Select Color Finish:</span>
+              <div class="colorway-options">
+                <button class="color-btn active" data-color="obsidian" title="Midnight Black with Electric Cobalt & Acid Lime">
+                  <span class="color-swatch swatch-noir"></span>
+                  <span class="color-name">Obsidian Noir</span>
+                </button>
+                <button class="color-btn" data-color="silver" title="Titanium Silver with Platinum Accent">
+                  <span class="color-swatch swatch-silver"></span>
+                  <span class="color-name">Titanium Silver</span>
+                </button>
+                <button class="color-btn" data-color="gold" title="Midnight Brass with Gold Accent">
+                  <span class="color-swatch swatch-gold"></span>
+                  <span class="color-name">Midnight Gold</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Price & Guarantee Box -->
+            <div class="preorder-pricing-card">
+              <div class="price-header">
+                <div class="price-figures">
+                  <span class="currency">$</span>
+                  <span class="amount">449</span>
+                  <span class="term">USD</span>
+                </div>
+                <div class="price-badge">Launch Price • Free Worldwide Delivery</div>
+              </div>
+
+              <div class="trust-perks">
+                <div class="perk-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>30-Day Risk-Free In-Home Acoustic Trial</span>
+                </div>
+                <div class="perk-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>2-Year Full International Manufacturer Warranty</span>
+                </div>
+                <div class="perk-item">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  <span>Batch 01 Shipping Begins November 2026</span>
+                </div>
+              </div>
+
+              <button class="btn btn-preorder-big" id="openCheckoutModal">
+                <span>Reserve AURIX ONE Now</span>
+                <span class="subtext">No charge until dispatch</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-monogram">
+            <svg class="brand-logo-icon" viewBox="0 0 32 32" fill="none">
+              <path d="M16 2L4 26H9L16 11L23 26H28L16 2Z" fill="currentColor"/>
+              <path class="brand-logo-rule" d="M11.5 21H20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="butt"/>
+            </svg>
+            <span class="brand-name">AURIX</span>
+          </div>
+          <p class="brand-tagline">Silence the noise. Feel everything.</p>
+          <div class="audio-lab-location">
+            <span>Acoustics & Industrial Design Labs</span>
+            <span>Copenhagen • Zurich • Tokyo</span>
+          </div>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h5>Product</h5>
+            <a href="#hero">AURIX ONE</a>
+            <a href="#acoustics">Acoustic Engine</a>
+            <a href="#engineering">Exploded Architecture</a>
+            <a href="#craftsmanship">Materials</a>
+            <a href="#specifications">Full Specs</a>
+          </div>
+
+          <div class="footer-col">
+            <h5>Technology</h5>
+            <a href="#acoustics">Adaptive -55dB ANC</a>
+            <a href="#acoustics">Graphene 40mm Driver</a>
+            <a href="#acoustics">Binaural Spatial 360°</a>
+            <a href="#specifications">LDAC & aptX Lossless</a>
+          </div>
+
+          <div class="footer-col">
+            <h5>Order & Support</h5>
+            <a href="#preorder">Pre-order Status</a>
+            <a href="#preorder">Warranty & Returns</a>
+            <a href="#preorder">Shipping Locations</a>
+            <a href="#preorder">Contact Engineering</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          © 2026 AURIX Audio Systems Inc. All rights reserved. Original consumer-electronics visual identity.
+        </div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Sale</a>
+          <a href="#">Acoustic Patents</a>
+          <a href="#">Environmental Declaration</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHECKOUT / PRE-ORDER MODAL DRAWER -->
+  <div class="modal-backdrop" id="checkoutModal" aria-hidden="true" role="dialog">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Pre-order modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="modal-badge">RESERVATION SECURED</span>
+        <h3>Reserve Your AURIX ONE</h3>
+        <p>Batch 01 Delivery • Serialized Collector Box</p>
+      </div>
+
+      <div class="modal-summary">
+        <div class="modal-product-line">
+          <img src="/assets/aurix/aurix-product-showcase.png" alt="AURIX ONE thumbnail" class="modal-thumb">
+          <div class="modal-product-details">
+            <h4 id="modalItemTitle">AURIX ONE — Obsidian Noir</h4>
+            <span>Custom 40mm Graphene • -55dB Hybrid ANC</span>
+            <div class="modal-tag-row">
+              <span class="badge-mini">Travel Case Included</span>
+              <span class="badge-mini">2-Year Warranty</span>
+            </div>
+          </div>
+          <div class="modal-item-price">$449</div>
+        </div>
+
+        <form class="reservation-form" id="reservationForm" onsubmit="event.preventDefault();">
+          <div class="form-group">
+            <label for="resName">Full Name</label>
+            <input type="text" id="resName" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="resEmail">Email Address for Dispatch Tracking</label>
+            <input type="email" id="resEmail" placeholder="your.name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="resCountry">Shipping Destination</label>
+            <select id="resCountry">
+              <option value="US">United States (Express 2-Day)</option>
+              <option value="UK">United Kingdom (Express 2-Day)</option>
+              <option value="EU">European Union (Express 2-Day)</option>
+              <option value="JP">Japan (Express 2-Day)</option>
+              <option value="CA">Canada (Express 3-Day)</option>
+              <option value="AU">Australia (Express 3-Day)</option>
+              <option value="OTHER">Worldwide Priority</option>
+            </select>
+          </div>
+
+          <div class="modal-total-row">
+            <span>Due Today:</span>
+            <strong>$0.00 <small>(Charged upon dispatch)</small></strong>
+          </div>
+
+          <button type="submit" class="btn btn-confirm-reservation" id="confirmReservationBtn">
+            Confirm Batch 01 Reservation
+          </button>
+          <div class="form-secure-notice">
+            256-bit encrypted reservation. You may cancel at any time before dispatch with zero penalty.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
